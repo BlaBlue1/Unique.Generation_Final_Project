@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./transaction.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+<body>
+  <nav id="nav-first" class="navbar navbar-expand-sm justify-content-center">
+    <a href="#" class="nav-link"> Commercial <i class="bi bi-instagram"></i></i> </a>
+    <a href="#" class="nav-link"> <i class="bi bi-facebook"></i></i> </a>
+    <a href="#" class="nav-link"><i class="bi bi-twitter"></i> </a>
+  </nav>
+  <nav id="nav-second" class="navbar navbar-expand-md navbar-dark"> 
+    <a class="navbar-brand mx-3" href="./index.html">Uni<span style="font-size:xx-large; font-family: 'Lobster', cursive; color: rgb(192, 255, 1);">que.</span></a>
+    <form class="d-flex">
+      <input class="form-control justify-content-center" type="search" placeholder="Search" aria-label="Search">
+      <button id="button-one" class="btn " type="submit">Search</button>
+    </form>
+      <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-lg-0 px-3" style="margin-left:auto;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="shoppingCart.html"><i class="bi bi-cart3"></i>View Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./login.html"><i class="bi bi-file-person-fill"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+     <!-- Nav ends here -->
+
+     <!-- Transaction table starts here -->
+
+    <div class="container-fluid" id="products-page">
+    <br><br>
+    <div class="row mx-3">
+        <h2>Orders</h2>
+    </div>
+    <div class="input-group">
+        <input type="search" class="form-check-inline rounded" placeholder="Search by order number, date, customer name" aria-label="Search" aria-describedby="search-addon" />
+        <button type="button" button id="button-one">search</button>
+      </div>
+    <div class="container-fluid" id="product-table">
+        <h3 class="table-header mx-3"> New Orders</h3>
+        <table class="table table-hover mx-3">
+            <thead>
+              <tr>
+                <th scope="col">Order #</th>
+                <th scope="col">Item list</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Prod. Code</th>
+                <th scope="col">Date</th>
+                <th scope="col">Cust. Request</th>
+                <th scope="col">Cust. Full Name</th>
+                <th scope="col">Email</th>
+                <th colspan="col">Phone #</th>
+                <th colspan="col">Shipping Address</th>
+                <th colspan="2" style="text-align: center;">Accept/Reject</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">000001</th>
+                <td>Item 1</td>
+                <td>1 </td>
+                <td>001</td>
+                <td>00.00.00</td>
+                <td>None</td>
+                <td>Customer Name</td>
+                <td>cust.name@example.com</td>
+                <td>0000000000</td>
+                <td>112 Harrison ave San fransisco, CA 00000</td>
+                <td>
+                    <button class="btn btn-group" type="button">Accept</button>
+                </td>
+                <td>
+                  <div class="col">
+                    <button class="btn btn-group" type="button">Reject</button>
+                  </div>  
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">000001</th>
+                <td>Item 1</td>
+                <td>1 </td>
+                <td>001</td>
+                <td>00.00.00</td>
+                <td>None</td>
+                <td>Customer Name</td>
+                <td>cust.name@example.com</td>
+                <td>0000000000</td>
+                <td>112 Harrison ave San fransisco, CA 00000</td>
+                <td>
+                  <button class="btn btn-group" type="button">Accept</button>
+                </td>
+                <td>
+                <div class="col">
+                  <button class="btn btn-group" type="button">Reject</button>
+                </div>  
+              </td>
+              </tr>
+              <tr>
+                <th scope="row">000001</th>
+                <td>Item 1</td>
+                <td>1 </td>
+                <td>001</td>
+                <td>00.00.00</td>
+                <td>None</td>
+                <td>Customer Name</td>
+                <td>cust.name@example.com</td>
+                <td>0000000000</td>
+                <td>112 Harrison ave San fransisco, CA 00000</td>
+                <td>
+                  <button class="btn btn-group" type="button">Accept</button>
+                </td>
+                <td>
+                <div class="col">
+                  <button class="btn btn-group" type="button">Reject</button>
+                </div>  
+              </td>
+              </tr>
+            </tbody>
+          </table>
+          <nav aria-label="Page navigation">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">❮</span>
+                  <span class="sr-only">Page 1</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">❯</span>
+                  <span class="sr-only"></span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+     </div>
+
+     <div class="input-group">
+        <input type="search" class="form-check-inline rounded" placeholder="Search by order number, date, customer name" aria-label="Search" aria-describedby="search-addon" />
+        <button type="button" button id="button-one">search</button>
+      </div>
+    <div class="container-fluid" id="product-table">
+        <h3 class="table-header mx-3"> Orders in Process</h3>
+        <table class="table table-hover mx-3">
+            <thead>
+              <tr>
+                <th scope="col">Order #</th>
+                <th scope="col">Item list</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Prod. Code</th>
+                <th scope="col">Date</th>
+                <th scope="col">Cust. Request</th>
+                <th scope="col">Cust. Full Name</th>
+                <th scope="col">Email</th>
+                <th colspan="col">Phone #</th>
+                <th colspan="col">Shipping Address</th>
+                <th colspan="2" style="text-align: center;">Status</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">000001</th>
+                <td>Item 1</td>
+                <td>1 </td>
+                <td>001</td>
+                <td>00.00.00</td>
+                <td>None</td>
+                <td>Customer Name</td>
+                <td>cust.name@example.com</td>
+                <td>0000000000</td>
+                <td>112 Harrison ave San fransisco, CA 00000</td>
+                <td>
+                    <div class="col">
+                        <select class="form-select px-2" aria-label="Default select example">
+                            <option value="1">Out for delivery</option>
+                            <option value="2">Pending</option>
+                        </select>
+                    </div>
+                </td>
+                <td>
+                    <div class="col">
+                        <button class="btn btn-group" type="button">Accept</button>
+                    </div>   
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">000001</th>
+                <td>Item 1</td>
+                <td>1 </td>
+                <td>001</td>
+                <td>00.00.00</td>
+                <td>None</td>
+                <td>Customer Name</td>
+                <td>cust.name@example.com</td>
+                <td>0000000000</td>
+                <td>112 Harrison ave San fransisco, CA 00000</td>
+                <td>
+                  <div class="col">
+                      <select class="form-select px-2" aria-label="Default select example">
+                          <option value="1">Out for delivery</option>
+                          <option value="2">Pending</option>
+                      </select>
+                  </div>
+              </td>
+              <td>
+                  <div class="col">
+                      <button class="btn btn-group" type="button">Accept</button>
+                  </div>   
+              </td>
+              </tr>
+              <tr>
+                <th scope="row">000001</th>
+                <td>Item 1</td>
+                <td>1 </td>
+                <td>001</td>
+                <td>00.00.00</td>
+                <td>None</td>
+                <td>Customer Name</td>
+                <td>cust.name@example.com</td>
+                <td>0000000000</td>
+                <td>112 Harrison ave San fransisco, CA 00000</td>
+                <td>
+                  <div class="col">
+                      <select class="form-select px-2" aria-label="Default select">
+                          <option value="1">Out for delivery</option>
+                          <option value="2">Pending</option>
+                      </select>
+                  </div>
+              </td>
+              <td>
+                  <div class="col">
+                      <button class="btn btn-group" type="button">Accept</button>
+                  </div>   
+              </td>
+              </tr>
+            </tbody>
+          </table>
+          <nav aria-label="Page navigation">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">❮</span>
+                  <span class="sr-only">Page 1</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">❯</span>
+                  <span class="sr-only"></span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+     </div>
+     
+     <!-- Order table ends here -->
+
+      <!--footer section -->
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h3>Menu</h3>
+                <a href="#">Accessories</a>
+                <a href="#">Lighting</a>
+                <a href="#">furniture</a>
+                <a href="./about.html">About Us</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="footer-heading footer-2">
+                <h3>Company</h3>
+                <a href="#">Profile</a>
+                <a href="#">Career</a>
+            </div>
+            <div class="footer-heading footer-3">
+                <h3>Our Team</h3>
+                <a href="./about.html">The team</a>
+            </div>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                    <label for="fname">Name</label><br><input type="text" id="fname" name="fname"><br>
+                    <label for="email">Email Address</label><br><input type="email" id="emale" placeholder="name@example.com"><br>
+                    <label for="subject">Subject</label><br><input type="text" id="subject" name="subject"><br>
+                    <label for="text">Message</label><br><textarea name="textarea" id="textarea" placeholder="Type Here" cols="50" rows="3"></textarea><br>
+                    <button id="button-one" type="button">Send</button>
+            </div>
+        </div>
+    </div>
+<div class="copy-right text-center">
+    <h4>@Unique 2022</h4>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> 
+</body>
+</html>

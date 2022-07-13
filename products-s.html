@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+<body>
+  <nav id="nav-first" class="navbar navbar-expand-sm justify-content-center">
+    <a href="#" class="nav-link"> Commercial <i class="bi bi-instagram"></i></i> </a>
+    <a href="#" class="nav-link"> <i class="bi bi-facebook"></i></i> </a>
+    <a href="#" class="nav-link"><i class="bi bi-twitter"></i> </a>
+  </nav>
+  <nav id="nav-second" class="navbar navbar-expand-md navbar-dark"> 
+    <a class="navbar-brand mx-3" href="./index.html">Uni<span style="font-size:xx-large; font-family: 'Lobster', cursive; color: rgb(192, 255, 1);">que.</span></a>
+    <form class="d-flex">
+      <input class="form-control justify-content-center" type="search" placeholder="Search" aria-label="Search">
+      <button id="button-one" class="btn " type="submit">Search</button>
+    </form>
+      <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-lg-0 px-3" style="margin-left:auto;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="shoppingCart.html"><i class="bi bi-cart3"></i>View Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./login.html"><i class="bi bi-file-person-fill"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+     <!-- Nav ends here -->
+
+     <!-- Product form starts here -->
+
+    <div class="container-fluid" id="products-page">
+      <h1 class="text-center pt-4" >Products</h1>
+    <br><br>
+    <div class="row mx-3 mt-0">
+      <h2 class="text-left mb-lg-4 " style="margin-left: 120px; margin-bottom: 20px;">Add products</h2>
+        <div class="col-sm-6 text-center" id="productImageDisplay">
+            <img src="data:image/jpeg;base64,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" width="425" length="450" class="rounded-3" alt="..." />
+            <div class="col my-4">
+              <input type="file" id="imageUploadUrl" accept="image/png, image/jpg, image/webp, image/svg, image/jpeg"/>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <input type="text" class="form-control rounded mb-3" placeholder="Enter Product Name" aria-label="Search" aria-describedby="search-addon" id="productName" />          
+            <div class="row g-2">
+              <div class="col">
+                <div class="form-floating">
+                  <select class="form-select" id="selectCategory" aria-label="Floating label select example">
+                    <option selected>Select Category</option>
+                    <option value="accessories">Accessories</option>
+                    <option value="furniture">Furniture</option>
+                    <option value="lighting">Lighting</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col">
+                  <input type="text" class="form-control rounded mb-3 pb-4" placeholder="Enter Sub Category" aria-label="Search" aria-describedby="search-addon" id="subCategory" />   
+              </div>
+            </div>
+            <hr>
+            <div class="row py-1" style="margin-left: 3px;">
+            <div class="col-1" style="width: auto;">Enter Price<input type="number" class="form-control rounded mb-3" placeholder="Set Price" id="setPrice" aria-label="Search" aria-describedby="search-addon" required/></div>
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="formControlTextarea margin-top: 3px">Enter Product Description</label>
+              <textarea class="form-control rounded-0" id="productDescription" rows="3">Product description</textarea>
+            </div>
+            <br>
+            
+            <div class="col-lg-6 pt-3"><button id="submitProduct" class="btn text-end " type="submit">Add to Products</button>
+            </div><br>
+          </div>
+      </div>
+    </div>       
+     <br><br>
+     
+     <div class="container-fluid" id="product-table">
+      <div class="row justify-content-end align-items-center">
+        <div class="col-2 text-end">
+         <input type="search" class="form-control rounded " placeholder="Search by order number, date, customer name" aria-label="Search" aria-describedby="search-addon" />
+        </div>
+        <div class="col-2">
+         <button type="button" button id="button-two">search</button>
+        </div>
+       </div>
+        <h3 class="table-header mx-3"> Product list</h3>
+        <table class="table table-hover mx-3">
+            <thead>
+              <tr>
+                <th scope="col">Prod. Code</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Category</th>
+                <th scope="col">Sub Category</th>
+                <th scope="col">Stock</th>
+                <th scope="col">Price</th>
+                <th scope="col">Image</th>
+                <th colspan="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Item Name</td>
+                <td>Item Description here</td>
+                <td>01</td>
+                <td>01</td>
+                <td>100</td>
+                <td>$300.00</td>
+                <td>image.jpg</td>
+                <td>
+                  <button class="btn btn-group" type="button">Edit</button>
+                  <button class="btn btn-group" type="button">Remove</button>
+                  <button class="btn btn-group" type="button">Disable</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Item Name</td>
+                <td>Item Description here</td>
+                <td>01</td>
+                <td>01</td>
+                <td>100</td>
+                <td>$300.00</td>
+                <td>image.jpg</td>
+                <td>
+                  <button class="btn btn-group" type="button">Edit</button>
+                  <button class="btn btn-group" type="button">Remove</button>
+                  <button class="btn btn-group" type="button">Disable</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Item Name</td>
+                <td>Item Description here</td>
+                <td>01</td>
+                <td>01</td>
+                <td>100</td>
+                <td>$300.00</td>
+                <td>image.jpg</td>
+                <td>
+                    <button class="btn btn-group" type="button">Edit</button>
+                    <button class="btn btn-group" type="button">Remove</button>
+                    <button class="btn btn-group" type="button">Disable</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+     </div>
+     
+     <!-- Product form ends here -->
+
+      <!--footer section -->
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h3>Menu</h3>
+                <a href="#">Accessories</a>
+                <a href="#">Lighting</a>
+                <a href="#">furniture</a>
+                <a href="./about.html">About Us</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="footer-heading footer-2">
+                <h3>Company</h3>
+                <a href="#">Profile</a>
+                <a href="#">Career</a>
+            </div>
+            <div class="footer-heading footer-3">
+                <h3>Our Team</h3>
+                <a href="./about.html">The team</a>
+            </div>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                    <label for="fname">Name</label><br><input type="text" id="fname" name="fname"><br>
+                    <label for="email">Email Address</label><br><input type="email" id="emale" placeholder="name@example.com"><br>
+                    <label for="subject">Subject</label><br><input type="text" id="subject" name="subject"><br>
+                    <label for="text">Message</label><br><textarea name="textarea" id="textarea" placeholder="Type Here" cols="50" rows="3"></textarea><br>
+                    <button id="button-one" type="button">Send</button>
+            </div>
+        </div>
+    </div>
+<div class="copy-right text-center">
+    <h4>@Unique 2022</h4>
+</div>
+<script src="./Javascript/itemController.js"></script>
+<script src="./Javascript/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> 
+</body>
+</html>

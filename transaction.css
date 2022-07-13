@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/*Footer Section*/
+.footer-container {
+    background-color: rgba(14, 12, 12, 0.887);
+    padding: 20px;
+}
+.footer {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+width: auto;
+height: auto;
+color: #fff;
+margin: 0 auto;
+}
+.footer-heading {
+display: flex;
+flex-direction: column;
+margin-right: 4rem;
+}
+.footer-heading h3 {
+    margin-bottom: 2rem;
+}
+.footer-heading a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+.copy-right h4 {
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    background-color: black;
+    color: #fff;
+    justify-content: center;
+}
+
+#nav-first {
+    background-color: black;
+    height: 30px;
+    align-content: center;
+    position:fixed;
+    padding-top: 2px;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+}
+#nav-second {
+    background-color: rgb(12, 96, 102);
+    position: fixed;
+    overflow: hidden;
+    top: 30px;
+    width: 100%;
+    z-index: 8;
+}
+.navbar-toggler {
+    background-color: rgb(39, 146, 154)
+}
+.navbar-brand {
+    font-size:xx-large;
+    font-family: 'Lobster', cursive;
+}
+body { 
+    padding-top: 65px;
+}
+.input-group {
+    justify-content: right;    
+}
+
+
+div > h2 {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.pagination {
+    justify-content: right;
+}
+
+
+.page-link {
+    background-color: rgb(39, 146, 154);
+
+}
