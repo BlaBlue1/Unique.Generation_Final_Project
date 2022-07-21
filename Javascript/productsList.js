@@ -5,7 +5,7 @@ const makeRequest = async () => {
         throw new Error(`There is an error with status ${response.status}`)
     }
     let itemsJson = response.json();
-    console.log(itemsJson);
+    // console.log(itemsJson);
     return itemsJson;
 }
 
@@ -15,7 +15,7 @@ const renderItems = async () => {
   
     let items = await makeRequest();
     let itemsArr = items;
-    console.log(itemsArr)
+    // console.log(itemsArr)
     itemsArr.forEach(item => {
         let itemtableRow = document.createElement("tr");
         itemtableRow.setAttribute("data-id", item.id);
