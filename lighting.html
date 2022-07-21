@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
 <body>
-  <nav id="nav-first" class="navbar navbar-expand-sm justify-content-center">
-    <a href="#" class="nav-link"> Commercial <i class="bi bi-instagram"></i></i> </a>
-    <a href="#" class="nav-link"> <i class="bi bi-facebook"></i></i> </a>
-    <a href="#" class="nav-link"><i class="bi bi-twitter"></i> </a>
+  <nav id="nav-first" class="navbar navbar-expand-sm justify-content-center" style="background-color:darkcyan">
+    <a href="#" class="nav-link" style="color:aliceblue"> Commercial <i class="bi bi-instagram " style="color:aliceblue"></i> </a>
+    <a href="#" class="nav-link"> <i class="bi bi-facebook" style="color:aliceblue"></i> </a>
+    <a href="#" class="nav-link"><i class="bi bi-twitter" style="color:aliceblue"></i> </a>
   </nav>
   <nav id="nav-second" class="navbar navbar-expand-md navbar-dark"> 
     <a class="navbar-brand mx-3" href="./index.html">Uni<span style="font-size:xx-large; font-family: 'Lobster', cursive; color: rgb(192, 255, 1);">que.</span></a>
@@ -30,10 +30,10 @@
             <a class="nav-link active" aria-current="page" href="./index.html">Shop</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Blog</a>
+            <a class="nav-link active" href="./blog.html">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Contact Us</a>
+            <a class="nav-link active" href="#footer">Contact Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="./shoppingCart.html"><i class="bi bi-cart3"></i>View Cart</a>
@@ -84,121 +84,32 @@
 
 <!-- Lightings list starts here -->
 <section>
+  <div class="row text-center pt-5">
+    <h2 style="font-weight: bold">Lighting</h2>
+</div>
+<div class="row justify-content-center mx-5 px-5">
+    <div class="col-1">Sort By:</div>
+    <div class="col-3">
+        <select class="form-select mx-5" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">Latest</option>
+            <option value="2">Price</option>
+            <option value="3">Type</option>
+          </select>
+    </div>
+</div>
     <div class="container-fluid">
-        <div class="row text-center pt-5">
-            <h2 style="font-weight: bold">Lighting</h2>
-        </div>
-        <div class="row justify-content-center mx-5 px-5">
-            <div class="col-1">Sort By:</div>
-            <div class="col-3">
-                <select class="form-select mx-5" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">Latest</option>
-                    <option value="2">Price</option>
-                    <option value="3">Type</option>
-                  </select>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-8 col-md-4 m-3 p-3">
-                <div class="card h-100">
-                  <img src="./images/lamp-1.jpg" alt="...">
-                  <div class="row card-body">
-                    <div class="col-12"><h5 class="card-title">Classic Table Lamp</h5></div>
-                    <div class="col"><p class="card-text">$300.00</p></div>
-                    <div class="col-4"><button id="button-one" class="btn text-end " type="submit">Add to Cart</button></div>
-                  </div>
-                </div>
-            </div>
-            <div class="col-8 col-md-4 m-3 p-3">
-                <div class="card h-100">
-                  <img src="./images/lamp-2.jpg" alt="...">
-                  <div class="row card-body">
-                    <div class="col-12"><h5 class="card-title">Ceiling Lights</h5></div>
-                    <div class="col"><p class="card-text">$300.00</p></div>
-                    <div class="col-4"><button id="button-one" class="btn text-end " type="submit">Add to Cart</button></div>
-                  </div>
-                </div>
-            </div>
-        </div>
+    <div class="row justify-content-center" id="lightings_list">
         
-        <div class="row justify-content-center">
-            <div class="col-8 col-md-4 m-3 p-3">
-                <div class="card h-100">
-                  <img src="./images/lamp-3.jpg" alt="...">
-                  <div class="row card-body">
-                    <div class="col-12"><h5 class="card-title">Ceiling and wall Light Set</h5></div>
-                    <div class="col"><p class="card-text">$300.00</p></div>
-                    <div class="col-4"><button id="button-one" class="btn text-end " type="submit">Add to Cart</button></div>
-                  </div>
-                </div>
-            </div>
-                <div class="col-8 col-md-4 m-3 p-3">
-                    <div class="card h-100">
-                      <img src="./images/lamp-4.jpg" alt="...">
-                      <div class="row card-body">
-                        <div class="col-12"><h5 class="card-title">Chandelier</h5></div>
-                        <div class="col"><p class="card-text">$300.00</p></div>
-                        <div class="col-4"><button id="button-one" class="btn text-end " type="submit">Add to Cart</button></div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-8 col-md-4 m-3 p-3">
-                <div class="card h-100">
-                  <img src="./images/lamp-5.jpg" alt="...">
-                  <div class="row card-body">
-                    <div class="col-12"><h5 class="card-title">ceiling Light Circular</h5></div>
-                    <div class="col"><p class="card-text">$300.00</p></div>
-                    <div class="col-4"><button id="button-one" class="btn text-end " type="submit">Add to Cart</button></div>
-                  </div>
-                </div>
-            </div>
-            <div class="col-8 col-md-4 m-3 p-3">
-                <div class="card h-100">
-                  <img src="./images/lamp-6.jpg" alt="...">
-                  <div class="row card-body">
-                    <div class="col-12"><h5 class="card-title">3-in-1 Ceiling Lamp</h5></div>
-                    <div class="col"><p class="card-text">$300.00</p></div>
-                    <div class="col-4"><button id="button-one" class="btn text-end " type="submit">Add to Cart</button></div>
-                  </div>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-8 col-md-4 m-3 p-3">
-                <div class="card h-100">
-                  <img src="./images/Lamp-7.jpg" alt="...">
-                  <div class="row card-body">
-                    <div class="col-12"><h5 class="card-title">8-in-1 ceiling lamp</h5></div>
-                    <div class="col"><p class="card-text">$300.00</p></div>
-                    <div class="col-4"><button id="button-one" class="btn text-end " type="submit">Add to Cart</button></div>
-                  </div>
-                </div>
-            </div>
-            <div class="col-8 col-md-4 m-3 p-3">
-                <div class="card h-100">
-                  <img src="./images/lamp-8.jpg" alt="...">
-                  <div class="row card-body">
-                    <div class="col-12"><h5 class="card-title">10-in-1 Modern Ceiling</h5></div>
-                    <div class="col"><p class="card-text">$300.00</p></div>
-                    <div class="col-4"><button id="button-one" class="btn text-end " type="submit">Add to Cart</button></div>
-                  </div>
-                </div>
-            </div>
-        </div>
-        <div class="row align-items-center text-end mx-5 px-5 mb-5">
-            <div class="col-10"><a href="#" style="color: black; font-weight: bold;"> < </a>Page 1 of 50<a href="#" style="color: black; font-weight: bold;"> > </a></div>
-            
-        </div>
+        
+      </div>
+      </div>
 </section>
 
 <!-- Lightings list ends here -->
 
 <!--footer section -->
-<div class="footer-container">
+<div class="footer-container" id="footer">
     <div class="footer">
         <div class="footer-heading footer-1">
             <h3>Menu</h3>
@@ -232,8 +143,8 @@
 <div class="copy-right text-center">
     <h4>@Unique 2022</h4>
 </div>
-<script src="./Javascript/itemController.js"></script>
-<script src="./Javascript/index.js"></script>
+<script src="./Javascript/lightingsList.js"></script>
+<!-- <script src="./Javascript/index.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> 
 </body>
